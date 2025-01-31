@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Entretien Ménager ML</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,17 +23,26 @@
         </div>
     </header>
 
+    <!-- IMAGE DE FOND -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h2>Nettoyage d’exception, luxe et perfection</h2>
+            <p>Sur la Rive-Sud de Montréal, nous offrons un service de nettoyage haut de gamme, conçu pour les environnements raffinés.</p>
+            <a href="#contact" class="btn-primary">Obtenez une soumission</a>
+        </div>
+    </section>
+
     <!-- SECTION SERVICES -->
     <section class="services">
         <div class="container">
             <h2>Nos Services</h2>
-            <p>Nous offrons un service de nettoyage résidentiel et commercial sur la **Rive-Sud de Montréal**.</p>
+            <p>Nous offrons un service de nettoyage résidentiel et commercial sur la <strong>Rive-Sud de Montréal</strong>.</p>
             <p>Excellence, discrétion et raffinement sont au cœur de notre engagement.</p>
         </div>
     </section>
 
     <!-- SECTION CONTACT / FORMULAIRE -->
-    <section class="contact">
+    <section id="contact" class="contact">
         <div class="container">
             <h2>Obtenez une Soumission Gratuite</h2>
             <form action="https://formsubmit.co/infomenageml@gmail.com" method="POST">
@@ -44,7 +58,7 @@
                 <label for="message">Votre Demande :</label>
                 <textarea id="message" name="message" required></textarea>
 
-                <button type="submit">Envoyer</button>
+                <button type="submit" class="btn-primary">Envoyer</button>
             </form>
             <p class="contact-info">Ou contactez-nous à <a href="mailto:infomenageml@gmail.com">infomenageml@gmail.com</a></p>
         </div>
