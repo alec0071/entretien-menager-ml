@@ -1,94 +1,143 @@
-/* Styles globaux */
+/* Global Styles */
 body {
-    font-family: 'Georgia', serif;
+    font-family: 'Lato', sans-serif;
+    color: #444;
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
-    color: #444;
-    text-align: center;
+    background-color: #f8f8f8;
 }
 
-/* Conteneur global */
-.container {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px;
-}
-
-/* HEADER */
+/* Header */
 header {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
-                url('https://source.unsplash.com/1600x900/?luxury,cleaning') no-repeat center center/cover;
-    color: white;
-    padding: 50px 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.logo {
-    max-width: 100px;
-    position: absolute;
-    left: 20px;
-    top: 20px;
+header .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #333;
 }
 
 .tagline {
-    font-size: 20px;
     font-style: italic;
-    opacity: 0.8;
+    color: #777;
 }
 
-/* SECTIONS */
-section {
-    padding: 60px 20px;
-    background-color: white;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+/* Hero Section */
+.hero {
+    background: url('https://source.unsplash.com/1600x900/?luxury,clean') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
-/* FORMULAIRE */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-top: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-button {
-    background-color: #444;
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
     font-size: 18px;
-    margin-top: 15px;
+    margin-bottom: 20px;
 }
 
-button:hover {
-    background-color: #222;
-}
-
-.contact-info {
-    margin-top: 15px;
-    font-size: 16px;
-}
-
-.contact-info a {
-    color: #444;
+/* Buttons */
+.btn-primary {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
     text-decoration: none;
+    border-radius: 5px;
     font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
 }
 
-.contact-info a:hover {
-    text-decoration: underline;
+.btn-primary:hover {
+    background-color: #357ab7;
 }
 
-/* FOOTER */
+/* Services */
+.services {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.services h2 {
+    font-size: 26px;
+    color: #222;
+}
+
+.services p {
+    font-size: 18px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Contact Section */
+.contact {
+    background: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 26px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    height: 100px;
+}
+
+.contact .btn-primary {
+    width: 100%;
+    margin-top: 15px;
+}
+
+/* Footer */
 footer {
+    text-align: center;
     background-color: #222;
     color: white;
-    padding: 20px;
-    margin-top: 30px;
+    padding: 15px;
+    margin-top: 20px;
 }
