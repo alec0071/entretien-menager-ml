@@ -3,44 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entretien Ménager ML</title>
+    <title>Entretien Ménager Haut de Gamme</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+    <!-- HEADER -->
     <header>
-        <!-- LOGO dans le coin gauche -->
-        <img src="https://raw.githubusercontent.com/alec0071/entretien-menager-ml/main/logo.png" 
-             alt="Logo Entretien Ménager ML" class="logo">
-        <h1>Entretien Ménager ML</h1>
-        <p>Services d'entretien ménager résidentiel et commercial</p>
+        <div class="container">
+            <img src="https://raw.githubusercontent.com/alec0071/entretien-menager-ml/main/logo.png" 
+                 alt="Logo Entretien Ménager ML" class="logo">
+            <h1>Entretien Ménager Haut de Gamme</h1>
+            <p class="tagline">"Offrez à votre espace la perfection qu’il mérite"</p>
+        </div>
     </header>
 
-    <section class="hero">
-        <img src="https://source.unsplash.com/1600x900/?cleaning" alt="Nettoyage professionnel">
-        <h2>Un espace propre, un esprit serein</h2>
-        <p>Contactez-nous pour un service impeccable !</p>
+    <!-- SECTION SERVICES -->
+    <section class="services">
+        <div class="container">
+            <h2>Nos Services</h2>
+            <p>Nous offrons un service de nettoyage résidentiel et commercial sur la **Rive-Sud de Montréal**.</p>
+            <p>Excellence, discrétion et raffinement sont au cœur de notre engagement.</p>
+        </div>
     </section>
 
-    <section class="contact-form">
-        <h2>Demande de renseignements</h2>
-        <form action="https://formsubmit.co/infomenageml@gmail.com" method="POST" id="contactForm">
-            <input type="hidden" name="_captcha" value="false">
-            <input type="hidden" name="_next" value="merci.html">
+    <!-- SECTION CONTACT / FORMULAIRE -->
+    <section class="contact">
+        <div class="container">
+            <h2>Obtenez une Soumission Gratuite</h2>
+            <form action="https://formsubmit.co/infomenage.ml@gmail.com" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="merci.html">
 
-            <label for="name">Nom :</label>
-            <input type="text" id="name" name="name" required>
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" required></textarea>
+                <label for="message">Votre Demande :</label>
+                <textarea id="message" name="message" required></textarea>
 
-            <button type="submit">Envoyer</button>
-        </form>
+                <button type="submit">Envoyer</button>
+            </form>
+            <p class="contact-info">Ou contactez-nous à <a href="mailto:infomenage.ml@gmail.com">infomenage.ml@gmail.com</a></p>
+        </div>
     </section>
 
+    <!-- FOOTER -->
     <footer>
         <p>© 2025 Entretien Ménager ML - Tous droits réservés</p>
     </footer>
