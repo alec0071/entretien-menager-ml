@@ -28,6 +28,7 @@ body {
 .hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 36px;
+    margin-bottom: 20px;
 }
 
 .tagline {
@@ -62,7 +63,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 
@@ -85,10 +86,61 @@ body {
     text-align: center;
 }
 
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.contact label {
+    text-align: left;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
 /* Footer */
 footer {
     text-align: center;
     background-color: #222;
     color: white;
     padding: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        height: 400px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+
+    .contact form {
+        grid-template-columns: 1fr;
+    }
+
+    .contact input,
+    .contact textarea {
+        font-size: 16px;
+    }
 }
