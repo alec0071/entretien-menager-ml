@@ -12,6 +12,14 @@ header {
     padding: 20px;
 }
 
+/* STYLE DU LOGO */
+.logo {
+    max-width: 150px;  /* Ajuste la taille du logo */
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto; /* Centre le logo et ajoute un espace en bas */
+}
+
 .hero {
     padding: 20px;
     background-color: #f4f4f4;
