@@ -1,3 +1,3 @@
 document.querySelector("form").addEventListener("submit", function(event) {
-    alert("Votre message a été envoyé avec succès !");
+    alert("Votre demande a été envoyée avec succès !");
 });
